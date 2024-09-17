@@ -1,0 +1,224 @@
+  ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-10-1-11-99 ~]$ sudo yum install mariadb 
+Last metadata expiration check: 0:08:50 ago on Tue Sep 17 05:02:19 2024.
+No match for argument: mariadb
+Error: Unable to find a match: mariadb
+[ec2-user@ip-10-1-11-99 ~]$ dnf install mariadb
+Error: This command has to be run with superuser privileges (under the root user on most systems).
+[ec2-user@ip-10-1-11-99 ~]$ sudo dnf install mariadb
+Last metadata expiration check: 0:09:16 ago on Tue Sep 17 05:02:19 2024.
+No match for argument: mariadb
+Error: Unable to find a match: mariadb
+[ec2-user@ip-10-1-11-99 ~]$ yum update
+Error: This command has to be run with superuser privileges (under the root user on most systems).
+[ec2-user@ip-10-1-11-99 ~]$ sudo yum update
+Last metadata expiration check: 0:09:26 ago on Tue Sep 17 05:02:19 2024.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-10-1-11-99 ~]$ sudo yum upgrade
+Last metadata expiration check: 0:09:36 ago on Tue Sep 17 05:02:19 2024.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-10-1-11-99 ~]$ sudo yum install mariadb 
+Last metadata expiration check: 0:09:42 ago on Tue Sep 17 05:02:19 2024.
+No match for argument: mariadb
+Error: Unable to find a match: mariadb
+[ec2-user@ip-10-1-11-99 ~]$ sudo yum install mysql -y
+Last metadata expiration check: 0:09:57 ago on Tue Sep 17 05:02:19 2024.
+No match for argument: mysql
+Error: Unable to find a match: mysql
+[ec2-user@ip-10-1-11-99 ~]$ sudo dnf install mariadb105-server -y
+ 
+Last metadata expiration check: 0:10:27 ago on Tue Sep 17 05:02:19 2024.
+Dependencies resolved.
+=========================================================================================================================================================================================
+ Package                                                    Architecture                   Version                                             Repository                           Size
+=========================================================================================================================================================================================
+Installing:
+ mariadb105-server                                          x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                          11 M
+Installing dependencies:
+ mariadb-connector-c                                        x86_64                         3.1.13-1.amzn2023.0.3                               amazonlinux                         196 k
+ mariadb-connector-c-config                                 noarch                         3.1.13-1.amzn2023.0.3                               amazonlinux                         9.2 k
+ mariadb105                                                 x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                         1.6 M
+ mariadb105-common                                          x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                          29 k
+ mariadb105-errmsg                                          x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                         213 k
+ mysql-selinux                                              noarch                         1.0.4-2.amzn2023.0.3                                amazonlinux                          36 k
+ perl-B                                                     x86_64                         1.80-477.amzn2023.0.6                               amazonlinux                         179 k
+ perl-DBD-MariaDB                                           x86_64                         1.22-1.amzn2023.0.4                                 amazonlinux                         153 k
+ perl-DBI                                                   x86_64                         1.643-7.amzn2023.0.3                                amazonlinux                         700 k
+ perl-Data-Dumper                                           x86_64                         2.174-460.amzn2023.0.2                              amazonlinux                          55 k
+ perl-File-Copy                                             noarch                         2.34-477.amzn2023.0.6                               amazonlinux                          20 k
+ perl-FileHandle                                            noarch                         2.03-477.amzn2023.0.6                               amazonlinux                          16 k
+ perl-Math-BigInt                                           noarch                         1:1.9998.39-2.amzn2023.0.2                          amazonlinux                         202 k
+ perl-Math-BigRat                                           noarch                         0.2614-458.amzn2023.0.2                             amazonlinux                          39 k
+ perl-Math-Complex                                          noarch                         1.59-477.amzn2023.0.6                               amazonlinux                          47 k
+ perl-Sys-Hostname                                          x86_64                         1.23-477.amzn2023.0.6                               amazonlinux                          18 k
+ perl-base                                                  noarch                         2.27-477.amzn2023.0.6                               amazonlinux                          17 k
+Installing weak dependencies:
+ mariadb105-backup                                          x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                         6.3 M
+ mariadb105-cracklib-password-check                         x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                          15 k
+ mariadb105-gssapi-server                                   x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                          17 k
+ mariadb105-server-utils                                    x86_64                         3:10.5.25-1.amzn2023.0.1                            amazonlinux                         216 k
+
+Transaction Summary
+=========================================================================================================================================================================================
+Install  22 Packages
+
+Total download size: 21 M
+Installed size: 118 M
+Downloading Packages:
+(1/22): mariadb-connector-c-config-3.1.13-1.amzn2023.0.3.noarch.rpm                                                                                      174 kB/s | 9.2 kB     00:00    
+(2/22): mariadb-connector-c-3.1.13-1.amzn2023.0.3.x86_64.rpm                                                                                             3.2 MB/s | 196 kB     00:00    
+(3/22): mariadb105-common-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                                              1.5 MB/s |  29 kB     00:00    
+(4/22): mariadb105-cracklib-password-check-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                             523 kB/s |  15 kB     00:00    
+(5/22): mariadb105-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                                                      13 MB/s | 1.6 MB     00:00    
+(6/22): mariadb105-gssapi-server-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                                       833 kB/s |  17 kB     00:00    
+(7/22): mariadb105-errmsg-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                                              3.7 MB/s | 213 kB     00:00    
+(8/22): mariadb105-backup-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                                               41 MB/s | 6.3 MB     00:00    
+(9/22): mariadb105-server-utils-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                                        4.4 MB/s | 216 kB     00:00    
+(10/22): mysql-selinux-1.0.4-2.amzn2023.0.3.noarch.rpm                                                                                                   1.5 MB/s |  36 kB     00:00    
+(11/22): perl-B-1.80-477.amzn2023.0.6.x86_64.rpm                                                                                                         4.2 MB/s | 179 kB     00:00    
+(12/22): perl-DBD-MariaDB-1.22-1.amzn2023.0.4.x86_64.rpm                                                                                                 3.9 MB/s | 153 kB     00:00    
+(13/22): mariadb105-server-10.5.25-1.amzn2023.0.1.x86_64.rpm                                                                                              52 MB/s |  11 MB     00:00    
+(14/22): perl-DBI-1.643-7.amzn2023.0.3.x86_64.rpm                                                                                                        7.4 MB/s | 700 kB     00:00    
+(15/22): perl-Data-Dumper-2.174-460.amzn2023.0.2.x86_64.rpm                                                                                              862 kB/s |  55 kB     00:00    
+(16/22): perl-File-Copy-2.34-477.amzn2023.0.6.noarch.rpm                                                                                                 1.0 MB/s |  20 kB     00:00    
+(17/22): perl-FileHandle-2.03-477.amzn2023.0.6.noarch.rpm                                                                                                773 kB/s |  16 kB     00:00    
+(18/22): perl-Math-BigInt-1.9998.39-2.amzn2023.0.2.noarch.rpm                                                                                            6.1 MB/s | 202 kB     00:00    
+(19/22): perl-Math-BigRat-0.2614-458.amzn2023.0.2.noarch.rpm                                                                                             1.5 MB/s |  39 kB     00:00    
+(20/22): perl-Math-Complex-1.59-477.amzn2023.0.6.noarch.rpm                                                                                              2.2 MB/s |  47 kB     00:00    
+(21/22): perl-Sys-Hostname-1.23-477.amzn2023.0.6.x86_64.rpm                                                                                              836 kB/s |  18 kB     00:00    
+(22/22): perl-base-2.27-477.amzn2023.0.6.noarch.rpm                                                                                                      447 kB/s |  17 kB     00:00    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                                     43 MB/s |  21 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                                                                 1/1 
+  Installing       : mariadb-connector-c-config-3.1.13-1.amzn2023.0.3.noarch                                                                                                        1/22 
+  Installing       : mariadb105-common-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                              2/22 
+  Installing       : mariadb-connector-c-3.1.13-1.amzn2023.0.3.x86_64                                                                                                               3/22 
+  Installing       : perl-Sys-Hostname-1.23-477.amzn2023.0.6.x86_64                                                                                                                 4/22 
+  Installing       : mariadb105-errmsg-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                              5/22 
+  Installing       : perl-Data-Dumper-2.174-460.amzn2023.0.2.x86_64                                                                                                                 6/22 
+  Installing       : perl-B-1.80-477.amzn2023.0.6.x86_64                                                                                                                            7/22 
+  Installing       : perl-base-2.27-477.amzn2023.0.6.noarch                                                                                                                         8/22 
+  Installing       : perl-Math-Complex-1.59-477.amzn2023.0.6.noarch                                                                                                                 9/22 
+  Installing       : perl-Math-BigRat-0.2614-458.amzn2023.0.2.noarch                                                                                                               10/22 
+  Installing       : perl-Math-BigInt-1:1.9998.39-2.amzn2023.0.2.noarch                                                                                                            11/22 
+  Installing       : perl-FileHandle-2.03-477.amzn2023.0.6.noarch                                                                                                                  12/22 
+  Installing       : perl-DBI-1.643-7.amzn2023.0.3.x86_64                                                                                                                          13/22 
+  Installing       : perl-DBD-MariaDB-1.22-1.amzn2023.0.4.x86_64                                                                                                                   14/22 
+  Installing       : perl-File-Copy-2.34-477.amzn2023.0.6.noarch                                                                                                                   15/22 
+  Running scriptlet: mysql-selinux-1.0.4-2.amzn2023.0.3.noarch                                                                                                                     16/22 
+  Installing       : mysql-selinux-1.0.4-2.amzn2023.0.3.noarch                                                                                                                     16/22 
+  Running scriptlet: mysql-selinux-1.0.4-2.amzn2023.0.3.noarch                                                                                                                     16/22 
+libsemanage.semanage_direct_install_info: Overriding mysql module at lower priority 100 with module at priority 200.
+
+  Installing       : mariadb105-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                                    17/22 
+  Installing       : mariadb105-backup-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                             18/22 
+  Installing       : mariadb105-cracklib-password-check-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                            19/22 
+  Installing       : mariadb105-gssapi-server-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                      20/22 
+  Running scriptlet: mariadb105-server-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                             21/22 
+  Installing       : mariadb105-server-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                             21/22 
+  Running scriptlet: mariadb105-server-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                             21/22 
+  Installing       : mariadb105-server-utils-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                       22/22 
+  Running scriptlet: mysql-selinux-1.0.4-2.amzn2023.0.3.noarch                                                                                                                     22/22 
+  Running scriptlet: mariadb105-server-utils-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                       22/22 
+  Verifying        : mariadb-connector-c-3.1.13-1.amzn2023.0.3.x86_64                                                                                                               1/22 
+  Verifying        : mariadb-connector-c-config-3.1.13-1.amzn2023.0.3.noarch                                                                                                        2/22 
+  Verifying        : mariadb105-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                                     3/22 
+  Verifying        : mariadb105-backup-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                              4/22 
+  Verifying        : mariadb105-common-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                              5/22 
+  Verifying        : mariadb105-cracklib-password-check-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                             6/22 
+  Verifying        : mariadb105-errmsg-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                              7/22 
+  Verifying        : mariadb105-gssapi-server-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                       8/22 
+  Verifying        : mariadb105-server-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                              9/22 
+  Verifying        : mariadb105-server-utils-3:10.5.25-1.amzn2023.0.1.x86_64                                                                                                       10/22 
+  Verifying        : mysql-selinux-1.0.4-2.amzn2023.0.3.noarch                                                                                                                     11/22 
+  Verifying        : perl-B-1.80-477.amzn2023.0.6.x86_64                                                                                                                           12/22 
+  Verifying        : perl-DBD-MariaDB-1.22-1.amzn2023.0.4.x86_64                                                                                                                   13/22 
+  Verifying        : perl-DBI-1.643-7.amzn2023.0.3.x86_64                                                                                                                          14/22 
+  Verifying        : perl-Data-Dumper-2.174-460.amzn2023.0.2.x86_64                                                                                                                15/22 
+  Verifying        : perl-File-Copy-2.34-477.amzn2023.0.6.noarch                                                                                                                   16/22 
+  Verifying        : perl-FileHandle-2.03-477.amzn2023.0.6.noarch                                                                                                                  17/22 
+  Verifying        : perl-Math-BigInt-1:1.9998.39-2.amzn2023.0.2.noarch                                                                                                            18/22 
+  Verifying        : perl-Math-BigRat-0.2614-458.amzn2023.0.2.noarch                                                                                                               19/22 
+  Verifying        : perl-Math-Complex-1.59-477.amzn2023.0.6.noarch                                                                                                                20/22 
+  Verifying        : perl-Sys-Hostname-1.23-477.amzn2023.0.6.x86_64                                                                                                                21/22 
+  Verifying        : perl-base-2.27-477.amzn2023.0.6.noarch                                                                                                                        22/22 
+
+Installed:
+  mariadb-connector-c-3.1.13-1.amzn2023.0.3.x86_64         mariadb-connector-c-config-3.1.13-1.amzn2023.0.3.noarch   mariadb105-3:10.5.25-1.amzn2023.0.1.x86_64                         
+  mariadb105-backup-3:10.5.25-1.amzn2023.0.1.x86_64        mariadb105-common-3:10.5.25-1.amzn2023.0.1.x86_64         mariadb105-cracklib-password-check-3:10.5.25-1.amzn2023.0.1.x86_64 
+  mariadb105-errmsg-3:10.5.25-1.amzn2023.0.1.x86_64        mariadb105-gssapi-server-3:10.5.25-1.amzn2023.0.1.x86_64  mariadb105-server-3:10.5.25-1.amzn2023.0.1.x86_64                  
+  mariadb105-server-utils-3:10.5.25-1.amzn2023.0.1.x86_64  mysql-selinux-1.0.4-2.amzn2023.0.3.noarch                 perl-B-1.80-477.amzn2023.0.6.x86_64                                
+  perl-DBD-MariaDB-1.22-1.amzn2023.0.4.x86_64              perl-DBI-1.643-7.amzn2023.0.3.x86_64                      perl-Data-Dumper-2.174-460.amzn2023.0.2.x86_64                     
+  perl-File-Copy-2.34-477.amzn2023.0.6.noarch              perl-FileHandle-2.03-477.amzn2023.0.6.noarch              perl-Math-BigInt-1:1.9998.39-2.amzn2023.0.2.noarch                 
+  perl-Math-BigRat-0.2614-458.amzn2023.0.2.noarch          perl-Math-Complex-1.59-477.amzn2023.0.6.noarch            perl-Sys-Hostname-1.23-477.amzn2023.0.6.x86_64                     
+  perl-base-2.27-477.amzn2023.0.6.noarch                  
+
+Complete!
+[ec2-user@ip-10-1-11-99 ~]$ mysql -h database-master-1.czfzhxepxbzy.us-east-1.rds.amazonaws.com -u admin -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 47
+Server version: 8.0.35 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> show schemas;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| udacity            |
++--------------------+
+5 rows in set (0.009 sec)
+
+MySQL [(none)]> use udacity;
+Database changed
+MySQL [udacity]> show tables;
+Empty set (0.003 sec)
+
+MySQL [udacity]> create table "test_table" (id int primary key auto_increment, name varchar(200);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"test_table" (id int primary key auto_increment, name varchar(200)' at line 1
+MySQL [udacity]> create table "test_table" (id int primary key auto_increment, name varchar(200));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"test_table" (id int primary key auto_increment, name varchar(200))' at line 1
+MySQL [udacity]> create table "test_table" (id int primary key auto increment, name varchar(200));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"test_table" (id int primary key auto increment, name varchar(200))' at line 1
+MySQL [udacity]> create table "test_table" (id int primary key, name varchar(200));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"test_table" (id int primary key, name varchar(200))' at line 1
+MySQL [udacity]> create table test_table (id int primary key, name varchar(200));
+Query OK, 0 rows affected (0.079 sec)
+
+MySQL [udacity]> insert into test_table(id, name) values (1, 'Test');
+Query OK, 1 row affected (0.006 sec)
+
+MySQL [udacity]> select * from test_table;
++----+------+
+| id | name |
++----+------+
+|  1 | Test |
++----+------+
+1 row in set (0.001 sec)
+
+MySQL [udacity]> 
