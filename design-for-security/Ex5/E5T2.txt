@@ -1,0 +1,27 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+Regula: https://github.com/fugue/regula
+AWS Config: https://aws.amazon.com/config/
+Terrascan: https://github.com/accurics/terrascan
+
+### Example vulnerability
+Server Side Encryption is not enabled for S3
+Unuse port exposed
+Access logs is not enabled
+
+##Scan AMI’s or containers for OS vulnerabilities
+Clair: https://github.com/quay/clair
+Ansible https://www.ansible.com/
+
+### Example vulnerability
+SSH root access with password logging
+Old libraries and images can have many bugs and security vulnerabilities.
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config 
+AWS GuardDuty
+
+### Example vulnerability
+S3 server side encryption
+An IAM role assigned a plicy that allows admin access

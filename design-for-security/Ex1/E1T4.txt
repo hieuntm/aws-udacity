@@ -1,0 +1,11 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+For the VPC configuration, all of the route definitions have CIDR defined as 0.0.0.0/0.
+
+An attacker can direclty steal information from the application and tranfer it into any IP within the VPC
+With all port exposed, maybe an attacker can DOS the server
+
+# Poor practice 2
+IAM Role has full access to any objects in s3.
+Violation of least privilege principle

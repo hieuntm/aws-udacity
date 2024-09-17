@@ -1,0 +1,17 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+1. Encryption and logging are essentials for S3. And also CloudTrail need to be specified when an API 
+invoked for an object in S3.
+2. Security Group allows all traffic from internet
+3. Port 5000 is reachable from application, even port 23 with stand for Telnet port and port 20, 21 stand 
+for FTP also is exposed 
+4. If an application include sensitive information need to config for HTTPS rediections
+5. IAM policy violate at least principle
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+1. The use of non-root account need to be enforced.
+2. Set IAM policies for at least principle
+3. Enable encryption and logging for S3. Especially, CloudTrail for tracking, it allows us for additional
+auditing and monitoring layer
+4. Enable VPC flow logging
+5. Close unnecessary port
+6. Remove public access for EC2
